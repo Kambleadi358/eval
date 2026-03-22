@@ -1,0 +1,4 @@
+project_id = "yegbbdzwlhpfhxfdjpvs"
+
+[functions.judge-api]
+verify_jwt = false
