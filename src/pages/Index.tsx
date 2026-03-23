@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
-import { Trophy, Users, Eye, ArrowLeft } from 'lucide-react';
+import { Trophy, Users, Eye, ArrowLeft, FileText } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -65,6 +65,20 @@ const Index = () => {
                 <div>
                   <h2 className="font-bold text-lg">सार्वजनिक स्पर्धा</h2>
                   <p className="text-sm text-muted-foreground">स्पर्धेतील नोंदी पहा व डाउनलोड करा</p>
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
+
+          <Link to="/report">
+            <Card className="card-hover border-2 border-muted">
+              <CardContent className="p-6 flex items-center gap-4">
+                <div className="bg-primary/10 p-3 rounded-full">
+                  <FileText className="text-primary" size={28} />
+                </div>
+                <div>
+                  <h2 className="font-bold text-lg">वार्षिक अहवाल</h2>
+                  <p className="text-sm text-muted-foreground">वार्षिक अहवाल पहा व डाउनलोड करा</p>
                 </div>
               </CardContent>
             </Card>
