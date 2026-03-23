@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
-import { LogOut, Menu, X, LayoutDashboard, Trophy, Users, Camera, Settings } from 'lucide-react';
+import { LogOut, Menu, X, LayoutDashboard, Trophy, Users, Camera, Settings, FileText } from 'lucide-react';
 import { useState } from 'react';
 
 const AdminLayout = ({ children }: { children: React.ReactNode }) => {
@@ -15,6 +15,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
     { path: '/admin/competition', label: 'स्पर्धा', icon: Trophy },
     { path: '/admin/judges', label: 'परीक्षक', icon: Users },
     { path: '/admin/entries', label: 'नोंदणी', icon: Camera },
+    { path: '/admin/reports', label: 'अहवाल', icon: FileText },
     { path: '/admin/settings', label: 'सेटिंग्ज', icon: Settings },
   ];
 

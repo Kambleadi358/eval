@@ -12,9 +12,11 @@ import AdminCompetition from "./pages/AdminCompetition";
 import AdminJudges from "./pages/AdminJudges";
 import AdminEntries from "./pages/AdminEntries";
 import AdminSettings from "./pages/AdminSettings";
+import AdminReports from "./pages/AdminReports";
 import JudgeLogin from "./pages/JudgeLogin";
 import JudgePanel from "./pages/JudgePanel";
 import PublicCompetition from "./pages/PublicCompetition";
+import PublicReport from "./pages/PublicReport";
 import Competitions from "./pages/Competitions";
 import Results from "./pages/Results";
 
@@ -42,6 +44,8 @@ const App = () => (
             <Route path="/admin/judges" element={<AdminRoute><AdminJudges /></AdminRoute>} />
             <Route path="/admin/entries" element={<AdminRoute><AdminEntries /></AdminRoute>} />
             <Route path="/admin/settings" element={<AdminRoute><AdminSettings /></AdminRoute>} />
+            <Route path="/admin/reports" element={<AdminRoute><AdminReports /></AdminRoute>} />
+            <Route path="/report" element={<PublicReport />} />
             <Route path="/judge-login" element={<JudgeLogin />} />
             <Route path="/judge-panel/:competitionId" element={<JudgePanel />} />
             <Route path="/competitions" element={<Competitions />} />

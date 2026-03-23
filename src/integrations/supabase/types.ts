@@ -14,6 +14,33 @@ export type Database = {
   }
   public: {
     Tables: {
+      annual_reports: {
+        Row: {
+          created_at: string
+          id: string
+          pdf_url: string
+          updated_at: string
+          year: number
+          zip_url: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          pdf_url: string
+          updated_at?: string
+          year: number
+          zip_url?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          pdf_url?: string
+          updated_at?: string
+          year?: number
+          zip_url?: string | null
+        }
+        Relationships: []
+      }
       competitions: {
         Row: {
           created_at: string
