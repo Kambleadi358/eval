@@ -15,9 +15,7 @@ const Index = () => {
           <ArrowLeft size={14} className="mr-1" /> विचारमंच मुख्य साइट
         </a>
 
-        <div className="mb-6 flex justify-center">
-          <img src="/logo.jpeg" alt="विचारमंच लोगो" className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-[#FF9933]/50 shadow-2xl" />
-        </div>
+        
 
         <p className="text-primary-foreground/60 text-xs tracking-widest mb-2 uppercase font-medium">अध्यक्षविहीन • विचारकेंद्रित • पारदर्शक</p>
         <h1 className="text-primary-foreground text-3xl md:text-5xl font-extrabold leading-tight mb-3 tracking-tight">
