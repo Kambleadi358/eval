@@ -15,7 +15,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
     { path: '/admin/competition', label: 'स्पर्धा', icon: Trophy },
     { path: '/admin/judges', label: 'परीक्षक', icon: Users },
     { path: '/admin/entries', label: 'नोंदणी', icon: Camera },
-    { path: '/admin/reports', label: 'अहवाल', icon: FileText },
+    // { path: '/admin/reports', label: 'अहवाल', icon: FileText },
     { path: '/admin/settings', label: 'सेटिंग्ज', icon: Settings },
   ];
 
@@ -47,9 +47,8 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
               key={item.path}
               to={item.path}
               onClick={() => setMenuOpen(false)}
-              className={`flex items-center gap-3 px-4 py-3 text-sm ${
-                location.pathname === item.path ? 'bg-primary/20 text-accent' : 'text-primary-foreground'
-              }`}
+              className={`flex items-center gap-3 px-4 py-3 text-sm ${location.pathname === item.path ? 'bg-primary/20 text-accent' : 'text-primary-foreground'
+                }`}
             >
               <item.icon size={18} />
               {item.label}
@@ -65,11 +64,10 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors ${
-                  location.pathname === item.path
+                className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors ${location.pathname === item.path
                     ? 'bg-primary/20 text-accent font-semibold'
                     : 'text-primary-foreground/80 hover:bg-primary/10 hover:text-primary-foreground'
-                }`}
+                  }`}
               >
                 <item.icon size={18} />
                 {item.label}
